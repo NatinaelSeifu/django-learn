@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="{% static 'css/mystyles.css' %}">
+</head>
+<body>
+    <h1>Welcome to forms Page</h1>
+    <div class = 'container'>
+        <form method="POST">
+            {{form.as_p}}
+            {% csrf_token %}
+            <input type="submit" class= 'btn-primary' value='Submit'>
+        </form>
+        
+    </div>
+</body>
+</html>
