@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Homepage</title>
+</head>
+<body>
+    <h1>this is the index.html</h1>
+    <h2>to navigate to base click <a href="{% url "base" %}">here</a></h2>
+
+    
+    <h3>{{text | cut:"Hallo" }}</h3>
+    <h3>{{num | add:'100' }}</h3>
+</body>
+</html>
